@@ -1,7 +1,7 @@
 from dnacentersdk import DNACenterAPI
 from pprint import pprint
-# from dnacreds import DNAC_USER, DNAC_PASS, DNAC_URL, DNAC_VER
 import os
+
 DNAC_USER = os.environ.get("DNA_CENTER_USERNAME")
 DNAC_PASS = os.environ.get("DNA_CENTER_PASSWORD")
 DNAC_URL = os.environ.get("DNA_CENTER_BASE_URL")
