@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Port Configuration",
+    "description": "",
+    "tags": [],
+    "deviceTypes": [
+      {
+        "productFamily": "Switches and Hubs",
+        "productSeries": "Cisco Catalyst 9300 Series Switches",
+        "productType": "Cisco Catalyst 9300 Switch"
+      }
+    ],
+    "softwareType": "IOS",
+    "softwareVariant": "XE",
+    "templateContent": "interface GigabitEthernet1/0/20\n description Config by DNAC Template/Net Profile\n switchport access vlan 10\n switchport mode access\n device-tracking attach-policy IPDT_POLICY\n spanning-tree portfast\n service-policy input DNA-MARKING_IN\n service-policy output DNA-dscp#APIC_QOS_Q_OUT\n ip nbar protocol-discovery\n no shutdown",
+    "rollbackTemplateContent": "",
+    "templateParams": [],
+    "rollbackTemplateParams": [],
+    "composite": false,
+    "containingTemplates": [],
+    "language": "JINJA",
+    "promotedTemplateContent": "interface GigabitEthernet1/0/20\n description Config by DNAC Template/Net Profile\n switchport access vlan 10\n switchport mode access\n device-tracking attach-policy IPDT_POLICY\n spanning-tree portfast\n service-policy input DNA-MARKING_IN\n service-policy output DNA-dscp#APIC_QOS_Q_OUT\n ip nbar protocol-discovery\n no shutdown",
+    "promotedTemplateParams": [],
+    "customParamsOrder": false,
+    "createTime": 1680185407613,
+    "lastUpdateTime": 1680185407613,
+    "latestVersionTime": 1680185407613,
+    "validationErrors": {
+      "templateErrors": [
+        {
+          "type": "POTENTIAL_CONFLICT",
+          "lineNumber": 2,
+          "message": "This command is reserved to be used by Cisco DNA Center"
+        },
+        {
+          "type": "POTENTIAL_CONFLICT",
+          "lineNumber": 6,
+          "message": "This command is reserved to be used by Cisco DNA Center"
+        },
+        {
+          "type": "POTENTIAL_CONFLICT",
+          "lineNumber": 1,
+          "message": "This command is reserved to be used by Cisco DNA Center"
+        },
+        {
+          "type": "POTENTIAL_CONFLICT",
+          "lineNumber": 3,
+          "message": "This command is reserved to be used by Cisco DNA Center"
+        },
+        {
+          "type": "POTENTIAL_CONFLICT",
+          "lineNumber": 4,
+          "message": "This command is reserved to be used by Cisco DNA Center"
+        }
+      ],
+      "rollbackTemplateErrors": [],
+      "templateId": "a5b3ae34-a19f-42a1-b2f7-16b2900c763c",
+      "templateVersion": null
+    },
+    "noOfConflicts": 5,
+    "projectAssociated": true,
+    "documentDatabase": false
+  }
+]
