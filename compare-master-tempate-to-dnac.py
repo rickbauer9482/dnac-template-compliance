@@ -19,20 +19,20 @@ dna_template = api.configuration_templates.get_template_details(template_id='a5b
 # pprint(mytemplate)
 
 # write dna_template response to template-out.txt
-with open('dna_template-out.txt', 'w') as dna_template_out:
-    dna_template_out.write(json.dumps(dna_template['templateContent']))
+with open('dna-template-out.txt', 'w') as dna-template-out:
+    dna-template-out.write(json.dumps(dna-template['templateContent']))
     
 
 # open master-template-out.txt from github
-master_f = open('master-template.json', 'r')
-data = json.load(master_f)
+master-f = open('master-template.json', 'r')
+data = json.load(master-f)
 # print(data[0]['templateContent'])
 
-with open('master-template.txt', 'w') as convert_master_f:
-    convert_master_f.write(json.dumps(data[0]['templateContent']))
+with open('master-template.txt', 'w') as convert-master-f:
+    convert-master-f.write(json.dumps(data[0]['templateContent']))
 # close files
-dna_template_out.close()
-convert_master_f.close()
+dna-template-out.close()
+convert-master-f.close()
 
 # Open File in Read Mode
 file_1 = open('master-template.txt', 'r')
