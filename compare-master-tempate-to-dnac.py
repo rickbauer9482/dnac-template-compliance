@@ -31,7 +31,7 @@ data = json.load(master_f)
 with open('master-template.txt', 'w') as convert_master_f:
     convert_master_f.write(json.dumps(data[0]['templateContent']))
 # close files
-template_out.close()
+dna_template_out.close()
 convert_master_f.close()
 
 # Open File in Read Mode
